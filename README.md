@@ -1,1 +1,1 @@
-# rhit-sophia.github.io
+Visit: http://rhit-sophia.github.io/
