@@ -1,22 +1,68 @@
 <html>
     <head>
         <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-        </ul>
-    </nav>
 
     <body>
-        <section>
+        <div id="nav"></div>
+        <h1>My Projects</h1>
+
+        <div class="filter">
+            <button id="all">All</button>
+            <button id="ml">Machine Learning</button>
+            <button id="dl">Deep Learning</button>
+            <button id="db">Database</button>
+        </div>
+
+        <section class="project ml">
             <h2>Board Game Success Prediction</h2>
-            <p>In this project, I used machine learning techniques to predict the success of board games based on various features such as game mechanics, player count, and user ratings. The model achieved an accuracy of 85% on the test dataset.</p>
-            <p>Technologies used: Python, scikit-learn, pandas, matplotlib</p>
-            <p><a href="https://github.com/sophiayang/board-game-prediction" target="_blank">View on GitHub</a></p>
+            <img src="board.png" alt="Board Game Success Prediction" width="400">
+            <p>This project used machine learning to predict the success of board games using data from BoardGameGeek.</p>
+            <div class="project-details">
+                <p>We cleaned and transformed numerical, text, and category data, then compared Linear Regression, Ridge, Lasso, and Random Forest models. Ridge Regression produced the best results among the models we tested.</p>
+                <p>Technologies used: Python, pandas, scikit-learn, TF-IDF, matplotlib</p>
+            </div>
+            <button class="learn-more">Learn More</button>
         </section>
+
+        <section class="project dl">
+            <h2>Game Cover Genre Classification</h2>
+            <img src="game_genre.png" alt="Game Cover Genre Classification" width="400">
+            <p>This deep learning project classified video games into five genres based on their cover images.</p>
+            <div class="project-details"> 
+                <p>We fine-tuned a pretrained ResNet50 model using transfer learning and applied data augmentation and regularization to improve performance. We also created an interactive Hugging Face demo for users to test the model.</p>
+                <p>Technologies used: Python, PyTorch, ResNet50, Hugging Face</p>
+            </div>
+            <button class="learn-more">Learn More</button>
+        </section>
+
+        <section class="project db">
+            <h2>Meal Planner</h2>
+            <img src="meal.png" alt="Meal Planner" width="400">
+            <p>Meal Planner is a web application that helps users organize meals based on their preferences and nutritional goals.</p>
+            <div class="project-details">
+                <p>Users can create meal plans and manage meal-related information through the application. The project also uses a database to store and manage user data.</p>
+                <p>Technologies used: JavaScript, Database</p>
+                <p> <a href="https://github.com/rhit-huangw5/MealPlanner" target="_blank">Meal Planner GitHub</a></p>
+            </div>
+            <button class="learn-more">Learn More</button>
+        </section>
+
+        <section class="project ml">
+            <h2>Diabetes Risk Prediction</h2>
+            <img src="diabetes.png" alt="Diabetes Risk Prediction" width="400">
+            <p>This research project used health survey data to predict diabetes or prediabetes risk from basic health indicators.</p>
+            <div class="project-details">
+                <p>I compared Logistic Regression and Random Forest models and explored different methods for handling class imbalance. I also analyzed which health factors were most important to the model predictions.</p>
+                <p>Technologies used: Python, pandas, scikit-learn, Random Forest, Logistic Regression</p>
+            </div>
+            <button class="learn-more">Learn More</button>
+        </section>
+
+
+        <div id="footer"></div>
+        <script src="jason.js"></script>
     </body>
 </html>

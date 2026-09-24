@@ -1,0 +1,77 @@
+#nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 20px;
+}
+
+#nav {
+    background-color: #d1c7e4;
+    padding: 10px;
+}
+
+#nav a{
+    color: rgb(55, 45, 130);
+}
+
+#nav a:hover{
+    color: rgb(46, 20, 61);
+}
+
+body{
+    background-color: #ebe3e3;
+    color: black;
+}
+
+section{
+    padding: 20px;
+    margin: 30px;
+    background-color: #d9d3e4;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(25, 26, 31);
+}
+
+a{
+    color: rgb(72, 83, 180);
+    text-decoration: underline;
+}
+
+a:visited{
+    color: rgb(90, 60, 120);
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(138, 138, 138);
+}
+
+.filter{
+    text-align: center;
+    margin: 20px;
+}
+
+button{
+    background-color: #c2b6d9;
+    border: none;
+    color: rgb(55, 45, 130);
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+}
+
+.project-details{
+    display: none;
+    margin-top: 10px;
+}
+
+p{
+    font-size: 18px;
+}
